@@ -2,9 +2,9 @@ name: Main build
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   build:
@@ -17,5 +17,6 @@ jobs:
       - name: Build
         run: |
           npm ci
+          npm run lint-check
           npm run check
           npm run build

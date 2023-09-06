@@ -1,29 +1,33 @@
 {
-    "name": "idle-tracker",
-    "description": "Show `active`, `idle`, `locked` time for the day",
-    "version": "0.0.0",
-    "type": "module",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/reinzor/idle-tracker.git"
-    },
-    "scripts": {
-        "dev": "vite",
-        "build": "vite build",
-        "build-zip": "node scripts/build-zip.cjs",
-        "check": "svelte-check --tsconfig ./tsconfig.json"
-    },
-    "devDependencies": {
-        "@crxjs/vite-plugin": "2.0.0-beta.18",
-        "@sveltejs/vite-plugin-svelte": "2.4.5",
-        "@tsconfig/svelte": "5.0.2",
-        "@types/chrome": "0.0.243",
-        "archiver": "^3.1.1",
-        "svelte": "4.2.0",
-        "svelte-check": "3.5.0",
-        "svelte-preprocess": "5.0.4",
-        "tslib": "2.6.2",
-        "typescript": "5.2.2",
-        "vite": "4.2.3"
-    }
+  "name": "idle-tracker",
+  "description": "Show `active`, `idle`, `locked` time for the day",
+  "version": "0.0.0",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reinzor/idle-tracker.git"
+  },
+  "scripts": {
+    "dev": "vite",
+    "lint": "prettier --ignore-path .gitignore --plugin prettier-plugin-svelte --write .",
+    "lint-check": "prettier --ignore-path .gitignore --plugin prettier-plugin-svelte --check . ",
+    "build": "vite build",
+    "build-zip": "node scripts/build-zip.cjs",
+    "check": "svelte-check --tsconfig ./tsconfig.json"
+  },
+  "devDependencies": {
+    "@crxjs/vite-plugin": "2.0.0-beta.18",
+    "@sveltejs/vite-plugin-svelte": "2.4.5",
+    "@tsconfig/svelte": "5.0.2",
+    "@types/chrome": "0.0.243",
+    "archiver": "^3.1.1",
+    "prettier": "^3.0.3",
+    "prettier-plugin-svelte": "^3.0.3",
+    "svelte": "4.2.0",
+    "svelte-check": "3.5.0",
+    "svelte-preprocess": "5.0.4",
+    "tslib": "2.6.2",
+    "typescript": "5.2.2",
+    "vite": "4.2.3"
+  }
 }

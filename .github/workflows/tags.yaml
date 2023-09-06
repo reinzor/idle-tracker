@@ -17,6 +17,7 @@ jobs:
       - name: Build
         run: |
           npm ci
+          npm run lint-check
           npm run check
           npm run build
           npm run build-zip
