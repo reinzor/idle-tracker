@@ -1,9 +1,9 @@
 type IStorage = {
-  count: number;
+  idleState: chrome.idle.IdleState;
 };
 
 const defaultStorage: IStorage = {
-  count: 0,
+  idleState: 'idle',
 };
 
 export const storage = {

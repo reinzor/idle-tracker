@@ -8,10 +8,10 @@ function render() {
   const target = document.getElementById('app');
 
   if (target) {
-    storage.get().then(({ count }) => {
+    storage.get().then(({ idleState }) => {
       new Options({
         target,
-        props: { count },
+        props: { idleState },
       });
     });
   }
